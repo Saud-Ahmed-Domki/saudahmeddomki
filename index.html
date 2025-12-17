@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saud Ahmed Domki</title>
+    <meta name="description" content="Saud Ahmed Domki is a student innovator, aspiring engineer, and science communicator. Explore his projects including electronic systems, web development, and creative tech solutions.">
+    <meta name="keywords" content="Saud Ahmed Domki, Saud Lab, Electronics Projects, Frontend Developer, Full Stack Developer, Innovative Projects, MCQs App, Weather Monitoring, Gas Leakage Detector, Clap Controlled Light, Water Level Monitor, Plant Watering System, Game Controller, Technology, Science Communication">
+    <meta name="author" content="Saud Ahmed Domki">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Saud Ahmed Domki | Innovator & Frontend Developer">
+    <meta property="og:description" content="Discover the projects and innovations of Saud Ahmed Domki, a student researcher and engineer passionate about electronics, coding, and web development.">
+    <meta property="og:image" content="Images/saud.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Saud Ahmed Domki | Innovator & Frontend Developer">
+    <meta name="twitter:description" content="Explore Saud Ahmed Domki's projects in electronics, web development, and technology innovation.">
+    <meta name="twitter:image" content="Images/saud.jpg">
+    <link rel="icon" href="saud.jpg" type="image/x-icon">
+</head>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#7e22ce',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.2);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active::after {
+            width: 100%;
+        }
+
+        .typ{
+        min-height: 1.4em; 
+        }
+
+      
+#home .btn-primary,
+#home .exp {
+    min-width: 180px;      
+    text-align: center;
+    display: inline-flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            left: -7.5px;
+            top: 0;
+            background: linear-gradient(135deg, #0ea5e9, #7e22ce);
+        }
+        
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #1e293b;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+            transition: width 1s ease-in-out;
+        }
+        
+        .project-card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            box-shadow: 5px 5px 15px rgba(2, 6, 23, 0.5), 
+                        -5px -5px 15px rgba(30, 41, 59, 0.5);
+        }
+        
+        .contact-input {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-input:focus {
+            border-color: #0ea5e9;
+            box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+#home {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+a, button {
+    min-height: 44px;
+}
+
+* {
+    word-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        text-align: center;
+        min-height: 1.8em; 
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    #home {
+        padding-top: 6rem;
+        text-align: center;
+    }
+
+    #home .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 95%;
+    }
+
+
+    #home .flex.space-x-4 {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .btn-primary,
+    .border {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #home img {
+        width: 220px;
+        height: 220px;
+        margin-left: 1rem;
+    }
+
+    #home .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .project-card {
+        margin-bottom: 1rem;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    #contact form button {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    #home img {
+        max-width: 280px;
+        max-height: 280px;
+    }
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-item > div {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+
+    .timeline-item {
+        position: relative;
+        padding-left: 2rem;
+        align-items: flex-start;
+    }
+
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 0.5rem;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #334155;
+        z-index: 0;
+    }
+
+    .timeline-item > div.bg-slate-800 {
+        margin-left: 1rem;
+        z-index: 1;
+    }
+
+    .relative > .absolute {
+        display: none;
+    }
+}
+
+
+
+    </style>
+</head>
+<body class="bg-dark text-slate-200">
+   <!-- Navigation -->
+<nav class="fixed w-full bg-darker/80 backdrop-blur-sm z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Saud Ahmed Domki</a>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-slate-200 hover:text-primary focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2">
+            <a href="#home" class="block py-2 nav-link active">Home</a>
+            <a href="#about" class="block py-2 nav-link">About</a>
+            <a href="#skills" class="block py-2 nav-link">Skills</a>
+            <a href="#projects" class="block py-2 nav-link">Projects</a>
+            <a href="#contact" class="block py-2 nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+
+    
+    <!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center pt-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Hi, I'm <span class="gradient-text">Saud Ahmed Domki</span>
+            </h1>
+           <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-slate-300 typ">
+    <span id="typing-text"></span>
+</h2>
+            <p class="text-lg mb-8 text-slate-400 max-w-lg">
+                I am an innovator who builds research-driven projects and turns ideas into real, working solutions. 
+                I explore science, technology, and design to create meaningful impact and make things better.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#projects" class="px-6 py-3 rounded-full btn-primary font-medium">
+                    View Work
+                </a>
+                <a href="#projects" class="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition exp">
+                    Explore Projects
+                </a>
+            </div>
+            <div class="flex mt-8 space-x-4">
+                <a href="https://www.instagram.com/domki_saud?igsh=em5wdHFsZmlrN3Yz" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-pink-600">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1D6GKsfb8D/" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/domki_saud" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-slate-600">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://github.com/Saud-Ahmed-Domki" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-gray-700">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtube.com/@saudahmeddomki?si=RbwH2ExK0JMMaaUF" class="social-icon text-xl w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-red-600">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
+                <img src="/saud.jpg"
+                     alt="Profile"
+                     class="relative w-full h-full object-cover rounded-full border-4 border-slate-800 floating">
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- About Section -->
+<section id="about" class="py-20 bg-darker">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                <div class="relative w-64 h-64">
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
+                    <img src="/saud.jpg"
+                         alt="About" 
+                         class="relative w-full h-full object-cover rounded-2xl border-4 border-slate-800">
+                </div>
+            </div>
+            
+            <div class="md:w-2/3 md:pl-12">
+                <h3 class="text-2xl font-bold mb-6">Who am I?</h3>
+                <p class="text-slate-400 mb-6">
+                    I’m Saud Ahmed Domki, a student innovator, aspiring engineer, and science communicator. 
+                    I’m passionate about physics, science and technology and I love turning ideas into real, 
+                    working projects using electronics, coding, and design. As the creator of Saud Lab, 
+                    I simplify complex science through videos and hands-on builds. My long-term goal is to build 
+                    impactful technologies and create solutions that combine innovation, purpose, and real-world impact.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <h4 class="font-semibold mb-2">
+                            Name: <span class="text-slate-300">Saud Ahmed Domki</span>
+                        </h4>
+                        <h4 class="font-semibold mb-2">
+                            Email: <span class="text-slate-300">ahmedsaud9829@gmail.com</span>
+                        </h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">
+                            Experience: <span class="text-slate-300">Independent Research & Projects</span>
+                        </h4>
+                        <h4 class="font-semibold mb-2">
+                            Location: <span class="text-slate-300">Pakistan</span>
+                        </h4>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#projects" class="px-6 py-3 rounded-full btn-primary font-medium">
+                        Explore My Work
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+
+       <!-- Experience Timeline -->
+<div class="mt-20">
+    <h3 class="text-2xl font-bold mb-8 text-center">
+        My <span class="gradient-text">Experience</span>
+    </h3>
+    
+    <div class="relative max-w-3xl mx-auto">
+        <div class="absolute left-1/2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
+        
+        <div class="mb-8 flex justify-between items-center w-full timeline-item">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
+                <h4 class="text-lg font-bold mb-2">Independent Researcher</h4>
+                <p class="text-sm text-slate-400 mb-2">Zenodo • Research Publication</p>
+                <p class="text-slate-300">
+                    Conducted independent scientific research and successfully published a research paper on Zenodo. 
+                    The research process involved study, experimentation, documentation, and review, completed over 
+                    a focused period of approximately 1.5 months.
+                </p>
+            </div>
+        </div>
+        
+        <div class="mb-8 flex justify-between items-center w-full timeline-item">
+            <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
+                <h4 class="text-lg font-bold mb-2">Student Innovator & Engineer</h4>
+                <p class="text-sm text-slate-400 mb-2">Personal Projects & Experiments</p>
+                <p class="text-slate-300">
+                    Designed and built multiple electronics, IoT, and automation projects including smart systems, 
+                    sensors, controllers, and embedded solutions using ESP32, Arduino, and software tools.
+                </p>
+            </div>
+            <div class="order-1 w-5/12"></div>
+        </div>
+        
+        <div class="mb-8 flex justify-between items-center w-full timeline-item">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg">
+                <h4 class="text-lg font-bold mb-2">Science Communicator & Creator</h4>
+                <p class="text-sm text-slate-400 mb-2">Saud Lab • YouTube & Online Platforms</p>
+                <p class="text-slate-300">
+                    Founded Saud Lab to communicate science and technology through videos and hands-on builds. 
+                    Focused on simplifying complex scientific concepts and showcasing practical innovations 
+                    for students and technology enthusiasts.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+    
+  <!-- Skills Section -->
+<section id="skills" class="py-20 bg-dark">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                My <span class="gradient-text">Skills</span>
+            </h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Technical Skills</h3>
+                
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Electronics & Embedded Systems</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">ESP32 / Arduino</span>
+                            <span>86%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Frontend Development (HTML, CSS, JS)</span>
+                            <span>84%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Research & Documentation</span>
+                            <span>81%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Professional Skills</h3>
+                
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Problem Solving</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Independent Learning</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Scientific Communication</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Creativity & Innovation</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+<!-- Tools & Technologies -->
+<div class="mt-16">
+    <h3 class="text-2xl font-bold mb-8 text-center">
+        Tools & <span class="gradient-text">Technologies</span>
+    </h3>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-microchip text-4xl text-green-400 mb-2"></i>
+            <span>ESP32</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-microchip text-4xl text-blue-400 mb-2"></i>
+            <span>Arduino</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+            <span>HTML5</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+            <span>CSS3</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fab fa-js text-4xl text-yellow-400 mb-2"></i>
+            <span>JavaScript</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+            <span>Node.js</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-wifi text-4xl text-indigo-400 mb-2"></i>
+            <span>IoT Systems</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-bolt text-4xl text-yellow-300 mb-2"></i>
+            <span>Sensors & Modules</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-code text-4xl text-gray-300 mb-2"></i>
+            <span>VS Code</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-drafting-compass text-4xl text-purple-400 mb-2"></i>
+            <span>Project Design</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-book text-4xl text-blue-300 mb-2"></i>
+            <span>Research Writing</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-code text-4xl text-cyan-400 mb-2"></i>
+            <span>C++</span>
+        </div>
+    </div>
+</div>
+
+
+    
+   <!-- Projects Section -->
+<section id="projects" class="py-20 bg-darker">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- YouTube Project -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                    <img src="images/saudlab.jpg" alt="Saud Lab" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Saud Lab (YouTube Channel)</h3>
+                    <p class="text-slate-400 mb-4">
+                        An educational YouTube channel explaining physics, science, and experiments in a simple and practical way.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Education</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Science</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Physics</span>
+                    </div>
+                    <a href="https://youtube.com/@saudahmeddomki?si=RbwH2ExK0JMMaaUF" class="text-primary hover:text-secondary">
+                        <i class="fab fa-youtube"></i> View on YouTube
+                    </a>
+                </div>
+            </div>
+
+            <!-- Electronics Project -->
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/radar.jpg" alt="Radar System" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Radar Detection System</h3>
+        <p class="text-slate-400 mb-4">
+            A rotating ultrasonic radar system that detects objects and visualizes distance.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Ultrasonic</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Servo</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Embedded</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1iwAkq5TmjlhupO-A2NKuURKgtGOm8Sml/view?usp=drivesdk" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Project Report
+        </a>
+    </div>
+</div>
+
+      <!-- Electronics + AI -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                    <img src="images/ai.png" alt="Zetron AI" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Zetron AI Assistant</h3>
+                    <p class="text-slate-400 mb-4">
+                        An AI-based assistant capable of automation, command execution, and intelligent responses.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">AI</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Automation</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1vpp7HOpSCIF83lpO7BjlDvKY3aaZi2hc/view?usp=drivesdk" class="text-primary hover:text-secondary">
+                        <i class="fas fa-file-alt"></i> Project Report
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/battery.jpg" alt="Li-ion Battery Research" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">
+            Effect of Temperature & Humidity on Li-ion Battery (Research Paper)
+        </h3>
+        <p class="text-slate-400 mb-4">
+            A research-based study analyzing how temperature and humidity impact the performance, efficiency, and lifespan of lithium-ion batteries.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Research</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Li-ion Battery</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Thermal Analysis</span>
+        </div>
+        <a href="https://zenodo.org/records/17575247" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Research Paper
+        </a>
+    </div>
+</div>
+          
+
+            <!-- Electronics Project -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                    <img src="images/gas.jpg" alt="Gas Leakage Detector" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Gas Leakage Detection System</h3>
+                    <p class="text-slate-400 mb-4">
+                        A safety device that detects gas leakage and alerts users using sensors and alarms.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Arduino</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Gas Sensor</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Safety</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1zQ-AocmuoXXHDn8W-GQ6WrJpMjvFk7-6/view?usp=drivesdk" class="text-primary hover:text-secondary">
+                        <i class="fas fa-file-alt"></i> Project Report
+                    </a>
+                </div>
+            </div>
+
+         
+         
+
+
+            <!-- Electronics Project -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                    <img src="images/controller.jpg" alt="Game Controller" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Wireless Game Controller</h3>
+                    <p class="text-slate-400 mb-4">
+                        A custom-built wireless controller using ESP32 and Bluetooth communication.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">ESP32</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Bluetooth</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Embedded</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1O-cdNU_F0sjmR5iOWRi_w5sV-JJeXDBf/view?usp=drivesdk" class="text-primary hover:text-secondary">
+                        <i class="fas fa-file-alt"></i> Project Report
+                    </a>
+                </div>
+            </div>
+
+            <!-- Electronics Project -->
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/waterlevel.jpg" alt="Water Level Monitor" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Water Level Monitoring System</h3>
+        <p class="text-slate-400 mb-4">
+            A system that detects water levels in tanks and alerts users to prevent overflow or shortage.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Arduino</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Water Level Sensor</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Automation</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1GAk3VpVFkBNrG8V7KkFGv5hxc2teVFKb/view?usp=drivesdk" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Project Report
+        </a>
+    </div>
+</div>
+
+<!-- Electronics Project -->
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/claplight.jpg" alt="Clap Controlled Light" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Clap Controlled Smart Light</h3>
+        <p class="text-slate-400 mb-4">
+            A smart lighting system that turns ON and OFF using sound detection (claps).
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Sound Sensor</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Relay</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Arduino</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1uINkhjPrRO8DkpBDqgApdmD_8FXq5fXf/view?usp=drivesdk" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Project Report
+        </a>
+    </div>
+</div>
+
+ <!-- Website Project -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                    <img src="images/mcqs.png" alt="MCQs Test App" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">MCQs Test Website (Class 11)</h3>
+                    <p class="text-slate-400 mb-4">
+                        A web-based MCQs testing platform designed according to the Sindh Textbook Board syllabus.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Education</span>
+                    </div>
+                    <a href="https://mcqs-test-app.vercel.app/" class="text-primary hover:text-secondary">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+
+               <!-- Electronics Project -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                    <img src="images/weather.jpg" alt="Weather Monitoring" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Weather Monitoring Device</h3>
+                    <p class="text-slate-400 mb-4">
+                        An IoT-based system that measures temperature and humidity using sensors and microcontrollers.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">ESP32</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">IoT</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Sensors</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1wFcbCnJ6ebV1UY_lp3YTMBCAMusDmrtN/view?usp=drivesdk" class="text-primary hover:text-secondary">
+                        <i class="fas fa-file-alt"></i> Project Report
+                    </a>
+                </div>
+            </div>
+
+<!-- Electronics Project -->
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/plant.jpg" alt="Plant Watering System" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Automatic Plant Watering System</h3>
+        <p class="text-slate-400 mb-4">
+            An automated irrigation system that waters plants when soil moisture is low.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Soil Sensor</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Pump</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Automation</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1DgELKoYy_jfNdl-9XxfvFhU5bgY7boH4/view?usp=drivesdk" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Project Report
+        </a>
+    </div>
+</div>
+
+<!-- Electronics Project -->
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/autoflip.jpg" alt="Auto Flip Switch" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Auto-Flip Smart Light Switch</h3>
+        <p class="text-slate-400 mb-4">
+            A mechanical smart switch that physically flips a light switch using a servo motor.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Servo Motor</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">IR Sensor</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Arduino</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1CZxCXT48O0X9NFewIJWWGAGETDru799V/view?usp=drivesdk" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Project Report
+        </a>
+    </div>
+</div>
+
+
+<!-- Website Project -->
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+       <img src="images/halal.jpg" alt="Halal Spotify" style="width: 100%;height: 100%;object-fit: cover;object-position: center;display: block;">
+
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Halal Spotify Website</h3>
+        <p class="text-slate-400 mb-4">
+            A concept website offering halal-friendly audio content with a Spotify-like interface.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">HTML</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">CSS</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">UI Design</span>
+        </div>
+        <a href="https://saud-ahmed-domki.github.io/Halal-Spotify/" class="text-primary hover:text-secondary">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+    </div>
+</div>
+
+
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/rain.jpg" alt="Rain Detector Project" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Rain Detector System</h3>
+        <p class="text-slate-400 mb-4">
+            A smart rain detection system that senses rainfall and triggers alerts or actions such as activating alarms or protective mechanisms.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Rain Sensor</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Microcontroller</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Weather Monitoring</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1Z_gMFLiVV9k3pLQRD9sX3vg11fh3BeYI/view?usp=drivesdk" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Project Report
+        </a>
+    </div>
+</div>
+
+
+<div class="project-card rounded-xl overflow-hidden card-hover">
+    <div class="h-48 overflow-hidden">
+        <img src="images/hand.jpg" alt="Hand Warmer Project" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Hand Warmer</h3>
+        <p class="text-slate-400 mb-4">
+            A compact electronic hand warmer designed to provide portable heat using battery-powered heating elements.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Heating Element</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Battery</span>
+            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Electronics</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1lJKYtZcv23sWNsBPxCsfA6R3ICT4H-Os/view?usp=drivesdk" class="text-primary hover:text-secondary">
+            <i class="fas fa-file-alt"></i> Project Report
+        </a>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+    
+ <!-- Contact Section -->
+<section id="contact" class="py-20 bg-dark">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Get In <span class="gradient-text">Touch</span>
+            </h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- LEFT SIDE -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                <p class="text-slate-400 mb-8">
+                    Feel free to reach out to me for any questions or collaboration.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded-full mr-4">
+                            <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Location</h4>
+                            <p class="text-slate-400">Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded-full mr-4">
+                            <i class="fas fa-envelope text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Email</h4>
+                            <p class="text-slate-400">ahmedsaud9829@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE (FORM) -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+
+                <form
+                    action="https://formspree.io/f/xkgdaryo"
+                    method="POST"
+                    class="space-y-6"
+                >
+                    <!-- Name & Email -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block mb-2 font-medium">Your Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none"
+                            >
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 font-medium">Your Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label class="block mb-2 font-medium">Subject</label>
+                        <input
+                            type="text"
+                            name="subject"
+                            required
+                            class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none"
+                        >
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block mb-2 font-medium">Message</label>
+                        <textarea
+                            name="message"
+                            rows="5"
+                            required
+                            class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none"
+                        ></textarea>
+                    </div>
+
+                    <!-- Extra -->
+                    <input type="hidden" name="_subject" value="New Contact Message from Website">
+
+                    <!-- Button -->
+                    <button type="submit" class="px-8 py-3 rounded-full btn-primary font-medium w-full">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+
+                    <!-- Success Message -->
+                    <p class="text-green-500 hidden" id="form-success">
+                        Message sent successfully!
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+  <!-- Footer -->
+<footer class="bg-darker py-12">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <a href="#" class="text-2xl font-bold gradient-text">Saud Ahmed Domki</a>
+                <p class="text-slate-400 mt-2">© 2025 Saud Ahmed Domki. All rights reserved.</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/domki_saud?igsh=em5wdHFsZmlrN3Yz" class="text-slate-400 hover:text-primary transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1D6GKsfb8D/" class="text-slate-400 hover:text-blue-600 transition">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="https://x.com/domki_saud" class="text-slate-400 hover:text-blue-400 transition">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="https://github.com/Saud-Ahmed-Domki" class="text-slate-400 hover:text-gray-700 transition">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://youtube.com/@saudahmeddomki?si=RbwH2ExK0JMMaaUF" class="text-slate-400 hover:text-red-600 transition">
+                    <i class="fab fa-youtube text-xl"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500">
+            <p>Made with <i class="fas fa-heart text-red-500"></i> and lots of <i class="fas fa-coffee text-amber-500"></i></p>
+        </div>
+    </div>
+</footer>
+
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+const roles = [
+  "Innovator",
+  "Frontend Developer",
+  "Student Researcher"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingSpeed = 100;
+const deletingSpeed = 60;
+const pauseAfterType = 1200;
+
+const typingElement = document.getElementById("typing-text");
+
+function typeEffect() {
+  const currentRole = roles[roleIndex];
+
+  if (!isDeleting) {
+    typingElement.textContent = currentRole.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentRole.length) {
+      setTimeout(() => isDeleting = true, pauseAfterType);
+    }
+  } else {
+    typingElement.textContent = currentRole.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+}
+
+typeEffect();
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    // Update active link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Update active link on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+            
+            // Show/hide back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            if (scrollPosition > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        // Back to top button
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Animate skill bars on scroll
+        const animateSkillBars = () => {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            const skillsSection = document.getElementById('skills');
+            const skillsSectionTop = skillsSection.offsetTop;
+            const windowHeight = window.innerHeight;
+            
+            if (window.scrollY > skillsSectionTop - windowHeight + 200) {
+                skillBars.forEach(bar => {
+                    const width = bar.style.width;
+                    bar.style.width = '0';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 100);
+                });
+                
+                // Remove event listener after animation
+                window.removeEventListener('scroll', animateSkillBars);
+            }
+        };
+        
+        window.addEventListener('scroll', animateSkillBars);
+    </script>
+</body>
+</html>
